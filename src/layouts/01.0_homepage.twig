@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "01.0_homepage" %}
+
+{% block main %}
+
+<div class="hp-wrapper">
+   {% include "@components/topstory-section/topstory-section.twig" %}
+   {% include "@components/hp-matches-section/hp-matches-section.twig" %}
+</div>
+{% include "@components/partners/partners.twig" %}
+{% include "@components/hp-posts-section/hp-posts-section.twig" %}
+{% include "@components/hp-dashboard/hp-dashboard.twig" %}
+{% endblock %}

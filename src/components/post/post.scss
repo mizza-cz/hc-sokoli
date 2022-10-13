@@ -1,0 +1,60 @@
+.post {
+  display: block;
+  .h3 {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+  }
+  &:hover {
+    .h3 {
+      text-decoration-color: inherit;
+    }
+    .post__img img {
+      transform: scale(1.1);
+    }
+  }
+  &__info {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding: 24px 0;
+    span {
+      font-weight: 700;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .h3 {
+      color: var(--color-primary);
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 8px;
+    }
+  }
+  .date {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__img {
+    height: 254px;
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-down(lg) {
+      height: auto;
+    }
+    img {
+      transition: all 0.3s;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration-color: transparent;
+  }
+}
