@@ -12,6 +12,11 @@
   }
   h1 {
     margin-bottom: 16px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+  }
+  p {
+    margin-bottom: 22px;
   }
 }
 .o-content h1,

@@ -1,0 +1,36 @@
+.aside {
+  padding-top: 40px;
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
+  &__title {
+    padding-left: 20px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  &__menu {
+    padding: 24px;
+    margin-bottom: 40px;
+    li {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--color-primary);
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+    a {
+      color: var(--color-light);
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      color: var(--color-primary);
+    }
+  }
+}

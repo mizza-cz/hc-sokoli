@@ -6,6 +6,15 @@
 }
 .c-hp-matches-section {
   padding: 40px 0 32px;
+  .col-lg-6 + .col-lg-6 {
+    border-left: 2px solid var(--color-primary);
+    @include media-breakpoint-down(lg) {
+      border-left: none;
+      border-top: 2px solid var(--color-primary);
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+  }
   &__item {
     text-align: center;
     .col-sm-4.col-12 {
@@ -52,14 +61,5 @@
         margin-bottom: 8px;
       }
     }
-  }
-}
-.col-lg-6 + .col-lg-6 {
-  border-left: 2px solid var(--color-primary);
-  @include media-breakpoint-down(lg) {
-    border-left: none;
-    border-top: 2px solid var(--color-primary);
-    padding-top: 24px;
-    margin-top: 24px;
   }
 }

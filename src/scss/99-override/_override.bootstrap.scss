@@ -8,4 +8,10 @@
 .bg-dark {
   background-color: var(--color-dark);
 }
+.border-bottom {
+  border-bottom: 1px solid var(--color-primary);
+}
+.pt-section{
+  padding-top: 72px;
+}
 /*! purgecss end ignore */
