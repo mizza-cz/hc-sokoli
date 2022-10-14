@@ -18,6 +18,61 @@
   p {
     margin-bottom: 22px;
   }
+  p iframe {
+    margin: 0;
+  }
+  iframe {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  table {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    border-spacing: 0;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+  th,
+  td {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  th {
+    text-align: left;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 8px;
+  }
+  td + td {
+    border-left: 1px solid #e9f6eb;
+  }
+  td {
+    border-bottom: 1px solid #e9f6eb;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    a {
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+}
+.table > :not(:first-child) {
+  border-top: none;
+}
+
+.table {
+  background-color: var(--color-light);
+  @include media-breakpoint-down(sm) {
+    width: max-content;
+  }
 }
 .o-content h1,
 .h1 {
