@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 22;
   color: var(--color-white);
   &__logo {
     padding: 0 16px;
@@ -240,6 +240,9 @@
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
   }
 }
 .c-header__opener {
