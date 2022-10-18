@@ -1,6 +1,6 @@
 a {
   text-decoration: underline;
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: inherit;
   transition: text-decoration-color 0.3s;
   color: inherit;
   &:hover {
