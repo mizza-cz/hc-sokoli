@@ -34,17 +34,21 @@
   td {
     padding-left: 12px;
     padding-right: 12px;
+    text-align: center;
+    min-width: 50px;
   }
 
   th:first-child,
   td:first-child {
     text-align: center !important;
+    text-align: left;
   }
 
   th:nth-child(2),
   td:nth-child(2) {
     max-width: 100%;
     width: 100% !important;
+    text-align: left;
     a {
       max-width: 100%;
       width: 100% !important;
