@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>06.0_archive - Královští sokoli</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+	<div class="base">
+		<div id="basket_bar_esports" data-idTeam="SLA" data-googleSearch="" data-competition="1liga"></div>
+		<header class="header w-100 bg-dark">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg">
+					<a class="header__logo" href="">
+						<div class="header__logo-img">
+							<img src="images/content/logo.png" loading="lazy" alt="logo" />
+						</div>
+						<div class="header__logo-title">
+							Královští sokoli
+							<span>Hradec Králové</span>
+						</div>
+					</a>
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Novinky </a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="http://localhost:3000/01.0_homepage.html?#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Klub
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="klub">
+									<li><a class="dropdown-item" href="#">Profil klubu</a></li>
+									<li><a class="dropdown-item" href="#">Vedení klubu</a></li>
+									<li><a class="dropdown-item" href="#">Kontakty</a></li>
+									<li><a class="dropdown-item" href="#">Stadion</a></li>
+									<li><a class="dropdown-item" href="#">Další sportoviště</a></li>
+									<li><a class="dropdown-item" href="#">Historie</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="a-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Hráči
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="a-tym">
+									<li><a class="dropdown-item" href="#">A-tým</a></li>
+									<li><a class="dropdown-item" href="#">U19</a></li>
+									<li><a class="dropdown-item" href="#">U17</a></li>
+									<li><a class="dropdown-item" href="#">U15</a></li>
+									<li><a class="dropdown-item" href="#">Všichni hráči</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="b-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Vstupenky
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="b-tym">
+									<li><a class="dropdown-item" href="#">Ceník vstupného</a></li>
+									<li>
+										<a class="dropdown-item" href="#">Hygienická opatření domácí zápasy</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Partneři </a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="fanzona" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Kontakt
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="fanzona">
+									<li><a class="dropdown-item" href="#">Kontakt na vedení</a></li>
+									<li><a class="dropdown-item" href="#">Přípravka</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="social">
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 0C5.373 0 0 5.395 0 12.05c0 5.97 4.326 10.912 9.999 11.87v-9.356H7.104v-3.366h2.895V8.715c0-2.88 1.752-4.45 4.31-4.45 1.226 0 2.28.092 2.585.133v3.01l-1.775.001c-1.391 0-1.66.664-1.66 1.638v2.149h3.32l-.432 3.367H13.46V24C19.397 23.274 24 18.205 24 12.047 24 5.395 18.627 0 12 0z" fill="#FE6600" fill-rule="nonzero" />
+									</svg> </a>
+							</li>
+
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<g fill="#FE6600" fill-rule="nonzero">
+											<path d="M14.297 12a2.297 2.297 0 11-4.594 0 2.297 2.297 0 014.594 0z" />
+											<path d="M17.372 7.936c-.11-.299-.287-.57-.516-.792a2.133 2.133 0 00-.792-.516c-.243-.094-.608-.206-1.28-.237-.726-.033-.944-.04-2.784-.04-1.84 0-2.058.007-2.784.04-.672.03-1.037.143-1.28.237-.3.11-.57.287-.792.516a2.136 2.136 0 00-.516.792c-.094.243-.206.608-.237 1.28-.033.726-.04.944-.04 2.784 0 1.84.007 2.058.04 2.785.03.671.143 1.036.237 1.279.11.3.287.57.516.792.222.23.493.405.792.516.243.094.608.206 1.28.237.726.033.944.04 2.784.04 1.84 0 2.058-.007 2.784-.04.672-.03 1.037-.143 1.28-.237a2.282 2.282 0 001.308-1.308c.094-.243.206-.608.237-1.28.033-.726.04-.944.04-2.784 0-1.84-.007-2.058-.04-2.784-.03-.672-.143-1.037-.237-1.28zM12 15.538a3.538 3.538 0 110-7.076 3.538 3.538 0 010 7.076zm3.678-6.39a.827.827 0 110-1.653.827.827 0 010 1.654z" />
+											<path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm6.85 14.84c-.034.734-.15 1.235-.321 1.674a3.523 3.523 0 01-2.015 2.015c-.439.17-.94.287-1.673.32-.735.034-.97.042-2.84.042-1.872 0-2.107-.008-2.842-.042-.733-.033-1.234-.15-1.672-.32a3.376 3.376 0 01-1.22-.795 3.377 3.377 0 01-.796-1.22c-.17-.439-.287-.94-.32-1.673-.034-.735-.042-.97-.042-2.841 0-1.871.008-2.106.042-2.84.033-.734.15-1.235.32-1.674.173-.46.444-.876.795-1.22.344-.35.76-.622 1.22-.795.439-.17.94-.287 1.673-.32.735-.034.97-.042 2.841-.042 1.871 0 2.106.008 2.84.042.734.033 1.235.15 1.674.32.46.173.876.444 1.22.795.35.344.622.76.795 1.22.17.439.287.94.32 1.673.034.735.042.97.042 2.841 0 1.871-.008 2.106-.042 2.84z" />
+										</g>
+									</svg> </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="c-archive-section border-bottom">
+				<div class="container">
+					<div class="row gx-10">
+						<div class="col-lg-8 col-md-10 mx-auto col-12">
+							<div class="pt-section pb-10">
+								<h1 class="h1 text-primary mb-6 text-uppercase">Archiv ČLÁNKŮ</h1>
+								<div class="header-section__row">
+									<form action="" class="header-section__form">
+										<div class="row gy-6">
+											<div class="col-xl-2 col-sm-4">
+												<label class="o-select header-section__label">
+													<select class="js-select">
+														<option>Kategorie</option>
+														<option>Kategorie 1</option>
+														<option>Kategorie 2</option>
+														<option>Kategorie 3</option>
+														<option>Kategorie 4</option>
+													</select>
+												</label>
+											</div>
+											<div class="col-xl-2 col-sm-4">
+												<label class="o-select header-section__label">
+													<select class="js-select">
+														<option>Měsíc</option>
+														<option>leden</option>
+														<option>únor</option>
+														<option>březen</option>
+														<option>duben</option>
+														<option>květen</option>
+														<option>červen</option>
+														<option>červenec</option>
+														<option>srpen</option>
+														<option>září</option>
+														<option>říjen</option>
+														<option>listopad</option>
+														<option>prosinec</option>
+													</select>
+												</label>
+											</div>
+											<div class="col-xl-2 col-sm-4">
+												<label class="o-select header-section__label">
+													<select class="js-select">
+														<option>Sezóna</option>
+														<option>Sezóna 1</option>
+														<option>Sezóna 2</option>
+														<option>Sezóna 3</option>
+														<option>Sezóna 4</option>
+														<option>Sezóna 5</option>
+														<option>Sezóna 6</option>
+													</select>
+												</label>
+											</div>
+											<div class="col-xl-4 col-sm-9">
+												<label class="header-section__input">
+													<input type="text" placeholder="Hledat v článcích..." />
+												</label>
+											</div>
+											<div class="col-xl-2 col-sm-3 col-12">
+												<button class="btn">Hledat</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="c-archive-section__inner">
+									<div class="row g-6 mb-6">
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+										<div class="col-sm-6 col-xl-4">
+											<article class="post">
+												<a href="#" class="post__link">
+													<div class="post__img">
+														<img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
+														<div class="date">16. 12. 2021</div>
+													</div>
+													<div class="post__info">
+														<h4 class="h3">
+															Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+														</h4>
+														<p>
+															Královohradecký tým představuje první zahraniční posilu pro nadcházející
+															ročník Kooperativa NBL. Tím je 25letý chorvatský guard Lovro Mandalinić…
+														</p>
+														<span>Mládež</span>
+													</div>
+												</a>
+											</article>
+										</div>
+									</div>
+									<nav aria-label="Další stránky">
+										<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
+											<li class="page-item active">
+												<a class="page-link" href="#" data-abc="true">1</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#" data-abc="true">2</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#" data-abc="true">3</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#" data-abc="true">4</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#" data-abc="true"> »</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<aside class="aside">
+								<h2 class="h3 aside__title">Kategorie</h2>
+								<ul class="aside__menu bg-dark">
+									<li>
+										<a class="active" href="#"> Vše</a>
+									</li>
+									<li>
+										<a href="#"> A tým </a>
+									</li>
+									<li>
+										<a href="#"> U11 </a>
+									</li>
+									<li>
+										<a href="#"> U11 KVAL. NF </a>
+									</li>
+									<li>
+										<a href="#"> U12 </a>
+									</li>
+									<li>
+										<a href="#"> U12 KVAL. NF </a>
+									</li>
+									<li>
+										<a href="#"> U13 </a>
+									</li>
+									<li>
+										<a href="#"> U14 </a>
+									</li>
+									<li>
+										<a href="#"> U15 </a>
+									</li>
+									<li>
+										<a href="#"> U17 </a>
+									</li>
+									<li>
+										<a href="#"> U19 </a>
+									</li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="partners">
+				<div class="container">
+					<div class="row justify-content-center align-items-center partners-slider">
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-1.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-2.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-3.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-4.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-5.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-6.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-1.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-2.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-3.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-4.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-5.png" loading="lazy" alt="" />
+							</a>
+						</div>
+						<div class="col-12 col-md-3 text-center">
+							<a class="partners__item" href="#">
+								<img src="images/content/partner-6.png" loading="lazy" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer bg-dark">
+			<div class="container">
+				<p>
+					© 2022 Královští sokoli &
+					<a href="https://esportsmedia.cz/">eSports.cz s.r.o.</a>
+				</p>
+				<div class="d-flex justify-content-center">
+					<ul class="social">
+						<li class="social__item">
+							<a target="_blank" class="social__link" href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 0C5.373 0 0 5.395 0 12.05c0 5.97 4.326 10.912 9.999 11.87v-9.356H7.104v-3.366h2.895V8.715c0-2.88 1.752-4.45 4.31-4.45 1.226 0 2.28.092 2.585.133v3.01l-1.775.001c-1.391 0-1.66.664-1.66 1.638v2.149h3.32l-.432 3.367H13.46V24C19.397 23.274 24 18.205 24 12.047 24 5.395 18.627 0 12 0z" fill="#FFF" fill-rule="nonzero" />
+								</svg> </a>
+						</li>
+
+						<li class="social__item">
+							<a target="_blank" class="social__link" href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<g fill="#FFF" fill-rule="nonzero">
+										<path d="M14.297 12a2.297 2.297 0 11-4.594 0 2.297 2.297 0 014.594 0z" />
+										<path d="M17.372 7.936c-.11-.299-.287-.57-.516-.792a2.133 2.133 0 00-.792-.516c-.243-.094-.608-.206-1.28-.237-.726-.033-.944-.04-2.784-.04-1.84 0-2.058.007-2.784.04-.672.03-1.037.143-1.28.237-.3.11-.57.287-.792.516a2.136 2.136 0 00-.516.792c-.094.243-.206.608-.237 1.28-.033.726-.04.944-.04 2.784 0 1.84.007 2.058.04 2.785.03.671.143 1.036.237 1.279.11.3.287.57.516.792.222.23.493.405.792.516.243.094.608.206 1.28.237.726.033.944.04 2.784.04 1.84 0 2.058-.007 2.784-.04.672-.03 1.037-.143 1.28-.237a2.282 2.282 0 001.308-1.308c.094-.243.206-.608.237-1.28.033-.726.04-.944.04-2.784 0-1.84-.007-2.058-.04-2.784-.03-.672-.143-1.037-.237-1.28zM12 15.538a3.538 3.538 0 110-7.076 3.538 3.538 0 010 7.076zm3.678-6.39a.827.827 0 110-1.653.827.827 0 010 1.654z" />
+										<path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm6.85 14.84c-.034.734-.15 1.235-.321 1.674a3.523 3.523 0 01-2.015 2.015c-.439.17-.94.287-1.673.32-.735.034-.97.042-2.84.042-1.872 0-2.107-.008-2.842-.042-.733-.033-1.234-.15-1.672-.32a3.376 3.376 0 01-1.22-.795 3.377 3.377 0 01-.796-1.22c-.17-.439-.287-.94-.32-1.673-.034-.735-.042-.97-.042-2.841 0-1.871.008-2.106.042-2.84.033-.734.15-1.235.32-1.674.173-.46.444-.876.795-1.22.344-.35.76-.622 1.22-.795.439-.17.94-.287 1.673-.32.735-.034.97-.042 2.841-.042 1.871 0 2.106.008 2.84.042.734.033 1.235.15 1.674.32.46.173.876.444 1.22.795.35.344.622.76.795 1.22.17.439.287.94.32 1.673.034.735.042.97.042 2.841 0 1.871-.008 2.106-.042 2.84z" />
+									</g>
+								</svg> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>
